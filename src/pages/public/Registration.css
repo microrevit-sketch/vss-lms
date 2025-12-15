@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+/* Colors inherited from sundarstem.css or defined here for specificity */
+:root {
+    --brand: #C90016;
+    --brand-dark: #A50012;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+}
+
+.reg-form {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.reg-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.reg-req {
+    color: #ef4444;
+}
+
+.reg-input,
+.reg-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background-color: #f9fafb;
+}
+
+.reg-input:focus,
+.reg-textarea:focus {
+    outline: none;
+    border-color: var(--brand);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(201, 0, 22, 0.1);
+}
+
+.reg-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.reg-hint {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .reg-form {
+        padding: 1.5rem;
+    }
+}

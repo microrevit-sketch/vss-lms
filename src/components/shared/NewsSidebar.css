@@ -1,0 +1,101 @@
+/* NEWS SIDEBAR */
+.news-sidebar {
+  background: #ffffff;
+  border: 2px solid #E2E8F0;
+  border-radius: 0;
+  padding: 1.5rem;
+  height: fit-content;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #0F172A;
+  margin: 0 0 1rem 0;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.01em;
+  text-align: center;
+  border-bottom: 2px solid #E2E8F0;
+  padding-bottom: 0.75rem;
+}
+
+.news-box-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.news-box-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-box-sidebar::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+.news-box-sidebar::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 0;
+}
+
+.news-box-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.news-item-sidebar {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-left: 4px solid #A51C30;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.news-item-sidebar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateX(3px);
+}
+
+.news-type-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: #A51C30;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.news-item-sidebar .news-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+.news-item-sidebar .news-description {
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.news-item-sidebar .news-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #64748B;
+  font-weight: 500;
+}

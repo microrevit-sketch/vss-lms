@@ -1,0 +1,64 @@
+/* ILM Page Styles */
+.bg-ilm-50 {
+    background-color: #f0fdf4;
+}
+
+.bg-ilm-100 {
+    background-color: #dcfce7;
+}
+
+.bg-ilm-500 {
+    background-color: #22c55e;
+}
+
+.bg-ilm-600 {
+    background-color: #16a34a;
+}
+
+.bg-ilm-700 {
+    background-color: #15803d;
+}
+
+.text-ilm-50 {
+    color: #f0fdf4;
+}
+
+.text-ilm-500 {
+    color: #22c55e;
+}
+
+.text-ilm-600 {
+    color: #16a34a;
+}
+
+.text-ilm-800 {
+    color: #166534;
+}
+
+.border-ilm-500 {
+    border-color: #22c55e;
+}
+
+.from-ilm-50 {
+    --tw-gradient-from: #f0fdf4;
+    --tw-gradient-to: rgb(240 253 244 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-ilm-100 {
+    --tw-gradient-to: #dcfce7;
+}
+
+.from-ilm-500 {
+    --tw-gradient-from: #22c55e;
+    --tw-gradient-to: rgb(34 197 94 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-ilm-600 {
+    --tw-gradient-to: #16a34a;
+}
+
+.to-ilm-700 {
+    --tw-gradient-to: #15803d;
+}
