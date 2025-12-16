@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { LogOut, Award, BookOpen } from 'lucide-react';
+import { LogOut, Award, BookOpen, Home } from 'lucide-react';
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -46,6 +46,17 @@ const Navbar = () => {
 
           {/* Program Links - Always visible */}
           <div className="header-center flex items-center space-x-1">
+            <Link
+              to="/"
+              className="program-nav-link px-3 py-2 text-white hover:bg-white hover:bg-opacity-20 rounded transition-all font-semibold text-base flex items-center space-x-2"
+              style={{
+                textShadow: '0 1px 2px rgba(0,0,0,0.1)'
+              }}
+              title="Home"
+            >
+              <Home size={18} />
+              <span>Home</span>
+            </Link>
             {programLinks.map((program) => (
               <Link
                 key={program.path}
