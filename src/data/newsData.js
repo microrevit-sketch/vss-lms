@@ -29,19 +29,27 @@ export const vssNews = [
 export const pmcNews = [
   {
     id: 'pmc-1',
-    title: 'PMC 2026 Registration Open',
+    title: 'PMC-5 2026 Registration Open',
     date: '2026-01-15',
     type: 'Contest',
-    description: 'Register now for Pakistan Math Contest 2026 - Grade 5, 6 & 7.',
+    description: 'Register now for Pakistan Math Contest 2026 - Grade 5 only.',
     program: 'PMC'
   },
   {
     id: 'pmc-2',
-    title: 'PMC-5 and PMC-7 Format Details',
+    title: 'PMC-5 Format Details',
     date: '2026-01-08',
     type: 'Update',
-    description: 'Two-round format with AI-invigilated Round 1 and in-person Round 2.',
+    description: 'Two-round format with AI-invigilated Round 1 and in-person Round 2 for Grade 5 students.',
     program: 'PMC'
+  },
+  {
+    id: 'vss-admission',
+    title: 'VSS Admission Test for Grades 6 & 7',
+    date: '2026-01-10',
+    type: 'Enrollment',
+    description: 'Virtual STEM School admission test open for Grade 6 & 7 students. Register now!',
+    program: 'VSS'
   },
   {
     id: 'pmc-3',
