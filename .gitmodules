@@ -1,0 +1,3 @@
+[submodule "vss-lms"]
+	path = vss-lms
+	url = https://github.com/microrevit-sketch/vss-lms.git
