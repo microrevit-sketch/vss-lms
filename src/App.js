@@ -9,6 +9,7 @@ import Practice from './pages/student/Practice';
 import PracticeSet from './pages/student/PracticeSet';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AddQuestion from './pages/admin/AddQuestion';
+import ManageCertificates from './pages/admin/ManageCertificates';
 import Home from './pages/public/Home';
 import RMC from './pages/public/RMC';
 import PMC5 from './pages/public/PMC5';
@@ -16,6 +17,7 @@ import VSS from './pages/public/VSS';
 import ILM from './pages/public/ILM';
 import Registration from './pages/public/Registration';
 import RMCMembership from './pages/public/RMCMembership';
+import CertificateVerification from './pages/public/CertificateVerification';
 import './App.css';
 import './sundarstem.css';
 
@@ -82,6 +84,7 @@ function AppContent() {
         <Route path="/ilm" element={<ILM />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/rmc-register" element={<RMCMembership />} />
+        <Route path="/certificate" element={<CertificateVerification />} />
 
         {/* Student Routes */}
         <Route
@@ -133,6 +136,14 @@ function AppContent() {
               <div className="min-h-screen flex items-center justify-center">
                 <h1 className="text-3xl font-bold">Manage Questions - Coming Soon</h1>
               </div>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/admin/certificates"
+          element={
+            <ProtectedRoute allowedRoles={['admin']}>
+              <ManageCertificates />
             </ProtectedRoute>
           }
         />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Plus, BookOpen, Users, BarChart3, Settings, FileText } from 'lucide-react';
+import { Plus, BookOpen, Users, BarChart3, Settings, FileText, Award } from 'lucide-react';
 
 const AdminDashboard = () => {
   return (
@@ -77,6 +77,19 @@ const AdminDashboard = () => {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Practice Sets</h3>
             <p className="text-gray-600">Create and manage practice sets</p>
+          </Link>
+
+          <Link
+            to="/admin/certificates"
+            className="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <div className="w-12 h-12 bg-white bg-opacity-20 rounded-xl flex items-center justify-center">
+                <Award size={24} />
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Certificates</h3>
+            <p className="text-white text-opacity-90">Manage VSS certificates</p>
           </Link>
 
           <Link

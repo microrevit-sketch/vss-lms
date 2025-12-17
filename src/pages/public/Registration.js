@@ -179,9 +179,9 @@ const Registration = () => {
             <div className="bg-red-50 py-12 mb-8 border-b border-red-100">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-sundar-red">Virtual STEM School (VSS) — Spring 2025</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif text-sundar-red">VSS Admission & PMC-5 Registration</h1>
                         <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                            Nationwide Evening Program for Grades 5, 6 & 7 · Organized by SundarSTEM School
+                            PMC-5 (Grade 5) · VSS Admission Test (Grades 6 & 7) · Organized by SundarSTEM School
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4">

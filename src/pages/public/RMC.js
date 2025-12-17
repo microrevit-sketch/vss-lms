@@ -177,6 +177,11 @@ const RMC = () => {
             </p>
           </div>
 
+          {/* Two Column Layout: Main Content + Outstanding Students Sidebar */}
+          <div className="grid lg:grid-cols-[1fr_350px] gap-8">
+
+            {/* Main Content Column */}
+            <div>
           {/* Top Positions by Venue */}
           <div className="mb-12">
             <h3 className="text-3xl font-bold text-center text-gray-900 mb-8 flex items-center justify-center gap-3">
@@ -219,8 +224,8 @@ const RMC = () => {
                 </div>
                 <p className="text-lg font-semibold text-gray-800 mb-1">Ebad Ullah Azeem</p>
                 <p className="text-sm text-gray-600 mb-2">Habib Public School</p>
-                <div className="inline-block bg-green-100 text-green-800 px-3 py-1 font-bold">
-                  15/15 ⭐
+                <div className="inline-block bg-rmc-100 text-rmc-800 px-3 py-1 font-bold">
+                  15/15
                 </div>
               </div>
 
@@ -238,7 +243,7 @@ const RMC = () => {
               </div>
 
               {/* Karachi - Dar e Arqam T Block - Co-toppers */}
-              <div className="bg-white p-6 shadow-lg border-l-4 border-l-green-500 md:col-span-2">
+              <div className="bg-white p-6 shadow-lg border-l-4 border-l-rmc-500 md:col-span-2">
                 <div className="flex items-center gap-2 mb-3">
                   <Trophy className="text-yellow-500" size={24} />
                   <h4 className="font-bold text-xl text-gray-900">Karachi - DAT (Co-toppers)</h4>
@@ -247,22 +252,22 @@ const RMC = () => {
                   <div>
                     <p className="text-base font-semibold text-gray-800">Basil</p>
                     <p className="text-xs text-gray-600">Dar e Arqam T Block</p>
-                    <div className="inline-block bg-green-100 text-green-800 px-2 py-1 text-sm font-bold mt-1">15/15 ⭐</div>
+                    <div className="inline-block bg-rmc-100 text-rmc-800 px-2 py-1 text-sm font-bold mt-1">15/15</div>
                   </div>
                   <div>
                     <p className="text-base font-semibold text-gray-800">M. Shaheen Mohsanin</p>
                     <p className="text-xs text-gray-600">Dar e Arqam T Block</p>
-                    <div className="inline-block bg-green-100 text-green-800 px-2 py-1 text-sm font-bold mt-1">15/15 ⭐</div>
+                    <div className="inline-block bg-rmc-100 text-rmc-800 px-2 py-1 text-sm font-bold mt-1">15/15</div>
                   </div>
                   <div>
                     <p className="text-base font-semibold text-gray-800">M. Usman Baqai</p>
                     <p className="text-xs text-gray-600">Dar e Arqam T Block</p>
-                    <div className="inline-block bg-green-100 text-green-800 px-2 py-1 text-sm font-bold mt-1">15/15 ⭐</div>
+                    <div className="inline-block bg-rmc-100 text-rmc-800 px-2 py-1 text-sm font-bold mt-1">15/15</div>
                   </div>
                   <div>
                     <p className="text-base font-semibold text-gray-800">M. Arham Naeem</p>
                     <p className="text-xs text-gray-600">Dar e Arqam Metroville</p>
-                    <div className="inline-block bg-green-100 text-green-800 px-2 py-1 text-sm font-bold mt-1">15/15 ⭐</div>
+                    <div className="inline-block bg-rmc-100 text-rmc-800 px-2 py-1 text-sm font-bold mt-1">15/15</div>
                   </div>
                 </div>
               </div>
@@ -359,6 +364,357 @@ const RMC = () => {
               Your support and your students' hard work made the RMC 1st Monthly Contest a memorable and confident start. 🌟
             </p>
           </div>
+            </div>
+            {/* End Main Content Column */}
+
+            {/* Outstanding Students Sidebar */}
+            <div className="lg:sticky lg:top-4 lg:self-start">
+              <div className="bg-white shadow-xl border-2 border-rmc-300 overflow-hidden">
+                <div className="bg-gradient-to-r from-rmc-500 to-rmc-600 text-white p-4">
+                  <h3 className="text-xl font-bold flex items-center gap-2">
+                    <Award size={24} />
+                    Outstanding Students by Venue
+                  </h3>
+                  <p className="text-xs text-rmc-100 mt-1">60%+ Scorers (9/15 or higher)</p>
+                </div>
+
+                <div className="max-h-[800px] overflow-y-auto">
+                  {/* Lahore */}
+                  <div className="border-b-2 border-rmc-100">
+                    <div className="bg-rmc-50 px-4 py-3 sticky top-0 z-10">
+                      <h4 className="font-bold text-rmc-800 flex items-center gap-2">
+                        <MapPin size={16} />
+                        Lahore
+                      </h4>
+                    </div>
+                    <div className="px-4 py-3 space-y-2">
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Abdul Rauf</p>
+                        <p className="text-xs text-gray-600">King Way Science School</p>
+                        <p className="text-xs font-bold text-rmc-600">12/15 (80%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Taha Mugis</p>
+                        <p className="text-xs text-gray-600">Ravian Foundation</p>
+                        <p className="text-xs font-bold text-gray-600">11/15 (73%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Ahmed Ibrar</p>
+                        <p className="text-xs text-gray-600">King Way Science School</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Ayesha Zakria</p>
+                        <p className="text-xs text-gray-600">King Way Science School</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <details className="text-sm">
+                        <summary className="cursor-pointer text-rmc-600 hover:text-rmc-700 font-semibold">Show 13 more students (60%)</summary>
+                        <div className="mt-2 space-y-2">
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Ammara</p>
+                            <p className="text-xs text-gray-600">The Apex Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Angel Sunil</p>
+                            <p className="text-xs text-gray-600">The Life Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Bareera Sajid</p>
+                            <p className="text-xs text-gray-600">The Life Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Eva Asif</p>
+                            <p className="text-xs text-gray-600">The Life Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Isra Fatima</p>
+                            <p className="text-xs text-gray-600">The Apex Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Maaz Yousaf</p>
+                            <p className="text-xs text-gray-600">Hashmi Model School</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Nuzat Ara</p>
+                            <p className="text-xs text-gray-600">The Life Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Rayan Abid</p>
+                            <p className="text-xs text-gray-600">Al Umar School</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Rehan Siddique</p>
+                            <p className="text-xs text-gray-600">The Apex Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Sameer Naveed</p>
+                            <p className="text-xs text-gray-600">The Apex Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Sidra Shakkel</p>
+                            <p className="text-xs text-gray-600">The Apex Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Ubaid Ullah</p>
+                            <p className="text-xs text-gray-600">Hashmi Model School</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Zoha Eman</p>
+                            <p className="text-xs text-gray-600">The Life Grammar</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+                  </div>
+
+                  {/* Abbottabad */}
+                  <div className="border-b-2 border-rmc-100">
+                    <div className="bg-rmc-50 px-4 py-3 sticky top-0 z-10">
+                      <h4 className="font-bold text-rmc-800 flex items-center gap-2">
+                        <MapPin size={16} />
+                        Abbottabad
+                      </h4>
+                    </div>
+                    <div className="px-4 py-3 space-y-2">
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Saifullah Shakir</p>
+                        <p className="text-xs text-gray-600">Mansehra Public School and College</p>
+                        <p className="text-xs font-bold text-rmc-600">12/15 (80%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Abdullah Ilyas</p>
+                        <p className="text-xs text-gray-600">Mansehra Public School and College</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Sinan Shah</p>
+                        <p className="text-xs text-gray-600">The Peace Group of Schools and Colleges, Haripur</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Shahfay</p>
+                        <p className="text-xs text-gray-600">MODERNAGE Public School & College</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <details className="text-sm">
+                        <summary className="cursor-pointer text-rmc-600 hover:text-rmc-700 font-semibold">Show 6 more students (60%)</summary>
+                        <div className="mt-2 space-y-2">
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">M. Asadullah</p>
+                            <p className="text-xs text-gray-600">The Peace Group of Schools and Colleges, Haripur</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">M. Hassan Islam</p>
+                            <p className="text-xs text-gray-600">MODERNAGE Public School & College</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">M. Shaaf</p>
+                            <p className="text-xs text-gray-600">MODERNAGE Public School & Girls College</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Nawal</p>
+                            <p className="text-xs text-gray-600">MODERNAGE Public School & Girls College</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">Zujaja Zaib</p>
+                            <p className="text-xs text-gray-600">MODERNAGE Public School & College</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                          <div className="border-l-2 border-gray-300 pl-2">
+                            <p className="font-semibold text-gray-800">M. Yahya</p>
+                            <p className="text-xs text-gray-600">Mansehra Public School and College</p>
+                            <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+                  </div>
+
+                  {/* Karachi - Venue 1: Habib Public School */}
+                  <div className="border-b-2 border-rmc-100">
+                    <div className="bg-rmc-50 px-4 py-3 sticky top-0 z-10">
+                      <h4 className="font-bold text-rmc-800 flex items-center gap-2">
+                        <MapPin size={16} />
+                        Karachi - Habib Public School
+                      </h4>
+                    </div>
+                    <div className="px-4 py-3 space-y-2">
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Ebad Ullah Azeem</p>
+                        <p className="text-xs text-gray-600">Habib Public</p>
+                        <p className="text-xs font-bold text-rmc-600">15/15 (100%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Osama Jangda</p>
+                        <p className="text-xs text-gray-600">Academia Civitas</p>
+                        <p className="text-xs font-bold text-rmc-600">13/15 (87%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Noel Umar</p>
+                        <p className="text-xs text-gray-600">Academia Civitas</p>
+                        <p className="text-xs font-bold text-rmc-600">12/15 (80%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">S. A. Hadi</p>
+                        <p className="text-xs text-gray-600">Habib Public</p>
+                        <p className="text-xs font-bold text-gray-600">11/15 (73%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Ehan Sawani</p>
+                        <p className="text-xs text-gray-600">Academia Civitas</p>
+                        <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Abubakar Adil</p>
+                        <p className="text-xs text-gray-600">Habib Public</p>
+                        <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Syed Zaviyar Ali</p>
+                        <p className="text-xs text-gray-600">Bay View High</p>
+                        <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Karachi - Venue 2: DAS Jauhar */}
+                  <div className="border-b-2 border-rmc-100">
+                    <div className="bg-rmc-50 px-4 py-3 sticky top-0 z-10">
+                      <h4 className="font-bold text-rmc-800 flex items-center gap-2">
+                        <MapPin size={16} />
+                        Karachi - DAS Jauhar
+                      </h4>
+                    </div>
+                    <div className="px-4 py-3 space-y-2">
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Eisa</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-rmc-600">12/15 (80%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">S. Almeer</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-gray-600">11/15 (73%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Hafiza Zainab</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Hamza Shah</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Sudais</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-gray-600">10/15 (67%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Nahayan Khan</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Rohan Rashid</p>
+                        <p className="text-xs text-gray-600">DAS Jauhar</p>
+                        <p className="text-xs font-bold text-gray-600">9/15 (60%)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Karachi - Venue 3: DAS T Block */}
+                  <div className="border-b-2 border-rmc-100">
+                    <div className="bg-rmc-50 px-4 py-3 sticky top-0 z-10">
+                      <h4 className="font-bold text-rmc-800 flex items-center gap-2">
+                        <MapPin size={16} />
+                        Karachi - DAS T Block
+                      </h4>
+                    </div>
+                    <div className="px-4 py-3 space-y-2">
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Basil</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-rmc-600">15/15 (100%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Arham Naeem</p>
+                        <p className="text-xs text-gray-600">DAS Metroville</p>
+                        <p className="text-xs font-bold text-rmc-600">15/15 (100%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Shaheen Mohsanin</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-rmc-600">15/15 (100%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">M. Usman Baqai</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-rmc-600">15/15 (100%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Adil Awan</p>
+                        <p className="text-xs text-gray-600">DAS Metroville</p>
+                        <p className="text-xs font-bold text-rmc-600">14/15 (93%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Manahil Kashif</p>
+                        <p className="text-xs text-gray-600">DAS Metroville</p>
+                        <p className="text-xs font-bold text-rmc-600">14/15 (93%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Samreen Rehman</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-rmc-600">14/15 (93%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Sania</p>
+                        <p className="text-xs text-gray-600">DAS Metroville</p>
+                        <p className="text-xs font-bold text-rmc-600">14/15 (93%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Syed Yahya Ali</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-rmc-600">14/15 (93%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-rmc-300 pl-2">
+                        <p className="font-semibold text-gray-800">Uroosa Ahmed</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-rmc-600">14/15 (93%)</p>
+                      </div>
+                      <div className="text-sm border-l-2 border-gray-300 pl-2">
+                        <p className="font-semibold text-gray-800">Rahim Sheraz</p>
+                        <p className="text-xs text-gray-600">DAS T Block</p>
+                        <p className="text-xs font-bold text-gray-600">13/15 (87%)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Outstanding Students Sidebar */}
+
+          </div>
+          {/* End Two Column Layout */}
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Calendar, BookOpen, Code, FileText, CheckCircle, Target, ArrowRight, Users } from 'lucide-react';
+import { GraduationCap, Calendar, BookOpen, Code, FileText, CheckCircle, Target, ArrowRight, Users, Award, Download } from 'lucide-react';
 import NewsSidebar from '../../components/shared/NewsSidebar';
 import { vssNews } from '../../data/newsData';
 import './VSS.css';
@@ -192,6 +192,119 @@ const VSS = () => {
                   <li className="flex items-start gap-2"><CheckCircle className="text-vss-500 mt-1" size={18} /> <span>Live evening classes approximately 2–3 hours on weekdays.</span></li>
                   <li className="flex items-start gap-2"><CheckCircle className="text-vss-500 mt-1" size={18} /> <span><strong>Chromebooks provided</strong> to deserving students to support equitable participation.</span></li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certificate Section for Completers */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 text-white px-4 py-2 mb-4">
+              <Award size={20} />
+              <span className="font-semibold">For VSS Graduates</span>
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Get Your Completion Certificate
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Congratulations on completing the 4-semester VSS program! Download your official certificate to celebrate your achievement.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Certificate Info */}
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 border-2 border-red-200">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-red-600 flex items-center justify-center">
+                    <Award className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Official Certificate</h3>
+                </div>
+                <p className="text-gray-700 mb-6">
+                  Students who have successfully completed all 4 semesters of the VSS program are eligible to receive an official completion certificate.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="text-red-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-gray-700">Digitally verifiable certificate</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="text-red-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-gray-700">Official SundarSTEM School seal</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="text-red-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-gray-700">Download as PDF for printing</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="text-red-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-gray-700">Includes all 4 semesters completed</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* How to Get Certificate */}
+              <div className="bg-white p-8 border-2 border-gray-200 shadow-md">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">How to Get Your Certificate</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-red-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                      1
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Get Your SSID</h4>
+                      <p className="text-sm text-gray-600">Your SSID (SundarSTEM ID) was provided when you enrolled in VSS. Check your enrollment email or contact us if you don't have it.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-red-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                      2
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Verify Your Certificate</h4>
+                      <p className="text-sm text-gray-600">Go to the certificate verification page and enter your SSID to view your certificate.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-red-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                      3
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">Download & Print</h4>
+                      <p className="text-sm text-gray-600">Download your certificate as a PDF file and print it for your records or to share with others.</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-gray-200">
+                    <Link
+                      to="/certificate"
+                      className="w-full flex items-center justify-center gap-2 bg-red-600 text-white px-6 py-3 text-lg font-semibold hover:bg-red-700 transition-colors"
+                    >
+                      <Download size={20} />
+                      Get Your Certificate Now
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Support Note */}
+            <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-6">
+              <div className="flex items-start gap-3">
+                <FileText className="text-blue-600 flex-shrink-0 mt-1" size={24} />
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-2">Need Help?</h4>
+                  <p className="text-gray-700 mb-2">
+                    If you have completed the 4-semester program but don't have your SSID, or if you're having trouble accessing your certificate, please contact us:
+                  </p>
+                  <a href="mailto:info@virtual.sundarstem.edu.pk" className="text-blue-600 hover:text-blue-800 font-semibold underline">
+                    info@virtual.sundarstem.edu.pk
+                  </a>
+                </div>
               </div>
             </div>
           </div>
